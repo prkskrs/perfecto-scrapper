@@ -15,7 +15,7 @@ app.post("/scrape", async (req, res) => {
   try {
     // const browser = await puppeteer.launch({ headless: true });
     const browser = await puppeteer.launch({
-      executablePath: process.env.CHROME_BIN || "/usr/bin/google-chrome-stable",
+      executablePath: process.env.CHROME_BIN || "/usr/bin/google-chrome",
       headless: true,
     });
     const page = await browser.newPage();
